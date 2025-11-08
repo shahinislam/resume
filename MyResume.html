@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahinur Islam - Software Engineer Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: white;
+            padding: 0;
+            margin: 0;
+            line-height: 1.6;
+            color: #000000;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0;
+            background: white;
+        }
+
+        .header {
+            background: white;
+            /* Changed from blue gradient to white */
+            color: #000000;
+            /* Changed from white to black */
+            padding: 10px 50px 10px 50px;
+            /* Reduced padding */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0px;
+            border-bottom: 2px solid #1e40af;
+            /* Added border instead of background */
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        .profile-photo {
+            width: 120px;
+            /* Slightly smaller */
+            height: 120px;
+            border-radius: 8px;
+            border: 1px solid #1e40af;
+            /* Changed border color */
+            object-fit: cover;
+            object-position: center top;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            /* Lighter shadow */
+            flex-shrink: 0;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+            color: #1e40af;
+            /* Blue color for name */
+        }
+
+        .header .title {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #000000;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 14px;
+        }
+
+        .contact-info a {
+            color: #1e40af;
+            /* Blue links */
+            text-decoration: none;
+        }
+
+        .contact-info span {
+            color: #000000;
+        }
+
+        .content {
+            padding: 30px 50px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #1e40af;
+            letter-spacing: 0.5px;
+        }
+
+        .summary {
+            color: #000000;
+            font-size: 15px;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        .job {
+            margin-bottom: 20px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .job-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #000000;
+        }
+
+        .job-company {
+            font-size: 15px;
+            color: #1e40af;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+
+        .job-date {
+            font-size: 14px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .job-description {
+            margin-top: 8px;
+        }
+
+        .job-description ul {
+            margin-left: 20px;
+            color: #000000;
+        }
+
+        .job-description li {
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #000000;
+            font-weight: 400;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-category h3 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        .skill-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: #f1f5f9;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #000000;
+            font-weight: 500;
+            border: 1px solid #e2e8f0;
+        }
+
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        .education-degree {
+            font-size: 16px;
+            font-weight: 700;
+            color: #000000;
+        }
+
+        .education-school {
+            font-size: 14px;
+            color: #1e40af;
+            margin-bottom: 4px;
+        }
+
+        .education-details {
+            font-size: 14px;
+            color: #000000;
+            font-weight: 400;
+        }
+
+        .projects-list {
+            display: grid;
+            gap: 12px;
+        }
+
+        .project-item {
+            background: #f9fafb;
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 3px solid #1e40af;
+        }
+
+        .project-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 5px;
+        }
+
+        .project-tech {
+            font-size: 13px;
+            color: #1e40af;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .project-link {
+            font-size: 13px;
+            color: #1e40af;
+            text-decoration: none;
+        }
+
+        .download-section {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #1e40af;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 10px;
+            transition: transform 0.2s;
+            cursor: pointer;
+            border: none;
+            font-size: 14px;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Print-specific styles */
+        @media print {
+            @page {
+                margin: 0.5in;
+                /* You can adjust this in browser print dialog */
+            }
+
+            body {
+                background: white;
+                padding: 0;
+                margin: 0;
+                font-size: 11pt;
+                line-height: 1.3;
+            }
+
+            .container {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .header {
+                background: white !important;
+                color: black !important;
+                padding: 20px 0 15px 0;
+                margin: 0;
+                border-bottom: 2px solid #1e40af;
+            }
+
+            .content {
+                padding: 20px 0;
+            }
+
+            .download-section {
+                display: none;
+            }
+
+            .section {
+                break-inside: avoid;
+                margin-bottom: 20px;
+            }
+
+            .job {
+                break-inside: avoid;
+            }
+
+            .profile-photo {
+                border: 2px solid #1e40af;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Ensure good print contrast */
+            * {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <h1>SHAHINUR ISLAM</h1>
+                <div class="title">Sr. Software Engineer</div>
+                <div class="contact-info">
+                    <span>📧 shahin.sec.cse@gmail.com</span>
+                    <span>📱 01303653800</span>
+                    <span>📍 Dhaka, Bangladesh</span>
+                </div>
+                <div class="contact-info" style="margin-top: 5px">
+                    <span><a href="https://linkedin.com/in/shahinurcse" target="_blank">🔗 LinkedIn</a></span>
+                    <span><a href="https://github.com/shahinislam" target="_blank">💻 GitHub</a></span>
+                </div>
+            </div>
+            <img src="ShahinurIslam.jpg" alt="Shahinur Islam" class="profile-photo">
+        </div>
+
+        <div class="content">
+            <!-- Your existing content remains exactly the same -->
+            <div class="section">
+                <div class="section-title">PROFESSIONAL SUMMARY</div>
+                <p class="summary">
+                    Full-stack Software Engineer with 5+ years of experience specializing in Laravel, Django, React, and
+                    mobile development. Expertise in building scalable SaaS platforms, healthcare systems, and
+                    enterprise solutions. Delivered efficient, maintainable applications across web and mobile platforms.
+                </p>
+            </div>
+
+            <div class="section">
+                <div class="section-title">PROFESSIONAL EXPERIENCE</div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Software Engineer</div>
+                            <div class="job-company">Byte Trek Limited</div>
+                        </div>
+                        <div class="job-date">July 2021 - Present</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Rebuilt SignatureCare healthcare platform (https://ercare24.com/) from WordPress to
+                                Laravel, React.js, and Next.js, migrating 800+ pages and thousands of images with a
+                                dynamic React.js dashboard for content management</li>
+                            <li>Built comprehensive Django-based credentialing system that streamlined healthcare
+                                provider verification, reducing processing time by 60%</li>
+                            <li>Designed and implemented enterprise employee management system with role-based access
+                                control for 100+ users, featuring ZKTeco device-integrated attendance system, leave
+                                management module, and upcoming payroll integration</li>
+                            <li>Developed survey web application using Laravel for released patient questionnaires,
+                                implementing barcode reader functionality and automated report generation in PDF/Excel
+                                formats with automatic email distribution to administrators and doctors</li>
+                            <li>Created RPA automation solution using UiPath for EPowerDoc platform, automating task
+                                preparation for doctors and eliminating manual workflow processes</li>
+                            <li>Collaborated with cross-functional teams to deliver features on schedule, maintaining
+                                95%+ code coverage with automated testing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Junior Software Developer</div>
+                            <div class="job-company">Kinetix BD</div>
+                        </div>
+                        <div class="job-date">November 2020 - June 2021</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Developed full-stack e-commerce platform with Livewire, featuring integrated inventory
+                                management and real-time order processing</li>
+                            <li>Built pharmacy management system with prescription tracking and automated reordering
+                                functionality</li>
+                            <li>Created employee management module with attendance tracking, leave management, and
+                                performance monitoring</li>
+                            <li>Implemented RESTful APIs and optimized database queries, improving application response
+                                time by 40%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">TECHNICAL SKILLS</div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Backend Development</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">Laravel</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Redis</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frontend Development</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Livewire</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Mobile Development</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">React Native</span>
+                            <span class="skill-tag">Flutter</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>UI Frameworks & Tools</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">jQuery</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps & Tools</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Linux</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Other Technologies</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">UiPath RPA</span>
+                            <span class="skill-tag">WordPress</span>
+                            <span class="skill-tag">C/C++</span>
+                            <span class="skill-tag">Java</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rest of your content remains the same -->
+            <div class="section">
+                <div class="section-title">KEY PROJECTS</div>
+                <div class="projects-list">
+                    <div class="project-item">
+                        <div class="project-title">Zap Sticker Studio - SaaS Platform</div>
+                        <div class="project-tech">Laravel • Livewire • Tailwind CSS</div>
+                        <p style="font-size: 13px; color: #555; margin-top: 5px;">Dashboard for uploading and
+                            maintaining stickers with RESTful API for mobile application integration</p>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-title">Electronic Medical Records (EMR) System</div>
+                        <div class="project-tech">Laravel • Bootstrap • MySQL</div>
+                        <p style="font-size: 13px; color: #555; margin-top: 5px;">Appointment scheduling, medical
+                            history tracking, and document uploading system</p>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-title">Inventory Management System</div>
+                        <div class="project-tech">Laravel • Livewire • Bootstrap</div>
+                        <p style="font-size: 13px; color: #555; margin-top: 5px;">Fully functional inventory system with
+                            comprehensive report generation</p>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-title">House Rent Management System</div>
+                        <div class="project-tech">Laravel • Livewire • jQuery • Bootstrap</div>
+                        <p style="font-size: 13px; color: #555; margin-top: 5px;">Property management solution with
+                            tenant tracking, payment processing, and reports</p>
+                    </div>
+                    <!-- <div class="project-item">
+                        <div class="project-title">Frontend UI Showcase</div>
+                        <div class="project-tech">HTML • CSS • Bootstrap</div>
+                        <a href="https://shahinislam.github.io/bootstrap-frontend-design/" class="project-link" target="_blank">View Demo →</a>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">EDUCATION</div>
+                <div class="education-item">
+                    <div class="education-degree">BSc in Computer Science & Engineering</div>
+                    <div class="education-school">Sylhet Engineering College, Shahjalal University of Science &
+                        Technology (SUST)</div>
+                    <div class="education-details">January 2013 - January 2018 • CGPA: 3.36/4.00</div>
+                </div>
+                <div class="education-item"">
+                    <div class=" education-details">
+                    <strong>Higher Secondary Certificate (HSC):</strong> GPA 5.0/5.0 (2012)<br>
+                    <strong>Secondary School Certificate (SSC):</strong> GPA 5.0/5.0 (2010)
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">COMPETITIVE PROGRAMMING</div>
+            <div class="education-details">
+                <!-- <p style="margin-bottom: 8px;">Active problem solver with strong algorithmic thinking and data structure knowledge:</p> -->
+                <ul style="margin-left: 20px;">
+                    <li>UVa Online Judge: <a href="http://uhunt.onlinejudge.org/id/374526" target="_blank"
+                            style="color: #667eea;">Profile</a></li>
+                    <li>Codeforces: <a href="https://codeforces.com/profile/Shahin_SEC" target="_blank"
+                            style="color: #667eea;">Profile</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="download-section">
+            <button class="download-btn" onclick="window.print()">Print as PDF</button>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
