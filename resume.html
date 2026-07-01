@@ -23,15 +23,15 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 2px solid #1e40af;
+            border-bottom: 2px solid #0f766e;
         }
-        .header h1 { font-size: 26px; font-weight: 700; color: #1e40af; margin-bottom: 3px; }
-        .header .title { font-size: 14.5px; font-weight: 600; color: #000; margin-bottom: 5px; }
-        .contact-row { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; }
-        .contact-row a { color: #1e40af; text-decoration: none; }
+        .header h1 { font-size: 26px; font-weight: 700; color: #0f766e; margin-bottom: 3px; letter-spacing: 0.3px; }
+        .header .title { font-size: 14.5px; font-weight: 600; color: #1e293b; margin-bottom: 5px; }
+        .contact-row { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; color: #334155; }
+        .contact-row a { color: #0f766e; text-decoration: none; }
         .profile-photo {
             width: 95px; height: 95px;
-            border-radius: 6px; border: 1.5px solid #1e40af;
+            border-radius: 6px; border: 1.5px solid #0f766e;
             object-fit: cover; object-position: center top; flex-shrink: 0;
         }
 
@@ -39,27 +39,27 @@
         .content { padding: 12px 40px 8px; }
         .section { margin-bottom: 12px; }
         .section-title {
-            font-size: 13px; font-weight: 700; color: #1e40af;
+            font-size: 13px; font-weight: 700; color: #0f766e;
             padding-bottom: 3px; margin-bottom: 7px;
-            border-bottom: 1.5px solid #1e40af;
+            border-bottom: 1.5px solid #0f766e;
             letter-spacing: 0.4px; text-transform: uppercase;
         }
 
         /* summary */
-        .summary { font-size: 12.5px; line-height: 1.55; }
+        .summary { font-size: 12.5px; line-height: 1.55; color: #1e293b; }
 
         /* jobs */
         .job { margin-bottom: 9px; }
         .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3px; }
-        .job-title { font-size: 13px; font-weight: 700; }
-        .job-company { font-size: 12px; color: #1e40af; font-weight: 500; margin-bottom: 2px; }
-        .job-date { font-size: 11.5px; color: #555; font-style: italic; white-space: nowrap; }
+        .job-title { font-size: 13px; font-weight: 700; color: #0f172a; }
+        .job-company { font-size: 12px; color: #0f766e; font-weight: 500; margin-bottom: 2px; }
+        .job-date { font-size: 11.5px; color: #64748b; font-style: italic; white-space: nowrap; }
         .job ul { margin-left: 15px; }
-        .job li { font-size: 12px; margin-bottom: 2.5px; line-height: 1.4; }
+        .job li { font-size: 12px; margin-bottom: 2.5px; line-height: 1.4; color: #1e293b; }
 
         /* skills — 4-col */
         .skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 9px 14px; }
-        .skill-category h3 { font-size: 11.5px; font-weight: 700; margin-bottom: 4px; }
+        .skill-category h3 { font-size: 11.5px; font-weight: 700; margin-bottom: 4px; color: #1e293b; }
         .skill-items { display: flex; flex-wrap: wrap; gap: 3px; }
         .skill-tag {
             background: #f1f5f9; border: 1px solid #e2e8f0;
@@ -68,44 +68,33 @@
             white-space: nowrap;
         }
 
-        /* PAGE 2 two-column layout */
-        .page2-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0 24px;
-        }
-        .page2-left {}
-        .page2-right {}
-
         /* projects */
+        .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }
         .project-item {
-            background: #f9fafb; border-left: 3px solid #1e40af;
-            border-radius: 4px; padding: 7px 9px; margin-bottom: 7px;
+            background: #f9fafb; border-left: 3px solid #0f766e;
+            border-radius: 4px; padding: 7px 9px;
         }
         .project-title { font-size: 12px; font-weight: 700; margin-bottom: 1px; }
-        .project-tech { font-size: 11px; color: #1e40af; font-weight: 500; margin-bottom: 2px; }
+        .project-tech { font-size: 11px; color: #0f766e; font-weight: 500; margin-bottom: 2px; }
         .project-desc { font-size: 11px; color: #333; line-height: 1.4; }
 
         /* education */
         .edu-item { margin-bottom: 6px; }
         .edu-degree { font-size: 12.5px; font-weight: 700; }
-        .edu-school { font-size: 11.5px; color: #1e40af; margin-bottom: 2px; }
+        .edu-school { font-size: 11.5px; color: #0f766e; margin-bottom: 2px; }
         .edu-details { font-size: 11.5px; }
-
-        /* cp */
-        .cp-list { margin-left: 16px; }
-        .cp-list li { font-size: 12px; margin-bottom: 3px; }
-        .cp-list a { color: #1e40af; text-decoration: none; }
 
         /* download btn */
         .download-section { text-align: center; padding: 14px; background: #f8f9fa; }
         .download-btn {
-            background: #1e40af; color: white;
+            background: #0f766e; color: white;
             padding: 9px 22px; border-radius: 5px;
             border: none; font-weight: 600; font-size: 13px; cursor: pointer;
+            transition: background 0.2s;
         }
+        .download-btn:hover { background: #0d5c56; }
 
-        /* PAGE 2 TWO-COLUMN LAYOUT */
+        /* PAGE 2 two-column layout */
         .page2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -136,7 +125,7 @@
             <div class="title">Sr. Software Engineer</div>
             <div class="contact-row" style="margin-bottom:3px;">
                 <span>📧 shahin.sec.cse@gmail.com</span>
-                <span>📱 01303653800</span>
+                <span>📱 +880 1303653800</span>
                 <span>📍 Dhaka, Bangladesh</span>
             </div>
             <div class="contact-row">
@@ -153,7 +142,7 @@
         <!-- SUMMARY -->
         <div class="section">
             <div class="section-title">Professional Summary</div>
-            <p class="summary">Full-stack Software Engineer with 5+ years of experience specializing in Laravel, Django, React, and mobile development. Expertise in building scalable SaaS platforms, healthcare systems, and enterprise solutions. Proficient in leveraging AI coding agents (Claude, ChatGPT, DeepSeek) to accelerate development workflows and deliver high-quality, maintainable applications across web and mobile platforms.</p>
+            <p class="summary">Full-stack Software Engineer with 5+ years of experience in Laravel, Django, React, and mobile apps. Builds large web platforms, healthcare systems, and business software that are fast and easy to grow. Also uses AI coding tools (Claude, ChatGPT, DeepSeek) to work faster and write clean, reliable code for both web and mobile.</p>
         </div>
 
         <!-- EXPERIENCE -->
@@ -163,18 +152,19 @@
             <div class="job">
                 <div class="job-header">
                     <div>
-                        <div class="job-title">Software Engineer</div>
+                        <div class="job-title">Sr. Software Engineer</div>
                         <div class="job-company">Byte Trek Limited</div>
                     </div>
                     <div class="job-date">July 2021 – Present</div>
                 </div>
                 <ul>
-                    <li><strong>SignatureCare Healthcare Platform:</strong> Rebuilt from WordPress to Laravel, React.js, and Next.js, migrating 800+ pages with a dynamic React.js content dashboard</li>
-                    <li><strong>Healthcare Credentialing System:</strong> Django-based verification system that reduced processing time by 60%</li>
-                    <li><strong>Enterprise Employee Management System:</strong> Role-based access for 100+ users with ZKTeco attendance integration and leave management</li>
-                    <li><strong>Patient Survey Web Application:</strong> Laravel app with barcode reader and automated PDF/Excel report distribution to administrators and doctors</li>
-                    <li><strong>EPowerDoc RPA Automation:</strong> UiPath solution automating task preparation for doctors, eliminating manual workflows</li>
-                    <li>Collaborated with cross-functional teams maintaining 95%+ code coverage with automated testing</li>
+                    <li><strong>SignatureCare Healthcare Platform</strong> <a href="https://ercare24.com" target="_blank" style="color:#0f766e;text-decoration:none;" title="ercare24.com">🔗</a>: Rebuilt the website from WordPress to Laravel (API), React.js (admin), and Next.js (public site) – moved 800+ pages, added 10-language support with English fallback, and built a React.js dashboard so non-technical staff can manage content themselves.</li>
+                    <li><strong>Employee Management System</strong> <a href="https://employee.bytetrek.com" target="_blank" style="color:#0f766e;text-decoration:none;" title="employee.bytetrek.com">🔗</a>: Laravel &amp; Livewire HR app with role-based access (admin, team lead, employee), ZKTeco fingerprint attendance, and automatic payroll, leave, and shift scheduling.</li>
+                    <li><strong>Patient Survey Web Application</strong> <a href="https://survey.ercare24.com" target="_blank" style="color:#0f766e;text-decoration:none;" title="survey.ercare24.com">🔗</a>: Tablet-based Livewire survey – low ratings send instant staff alerts, high ratings show a QR code for public reviews. Builds PDF/Excel reports and logs every email and SMS.</li>
+                    <li><strong>Healthcare Credentialing System</strong> <a href="https://credentialing.ercare24.com" target="_blank" style="color:#0f766e;text-decoration:none;" title="credentialing.ercare24.com">🔗</a>: Django app that tracks staff document expiry with a live compliance dashboard; one Excel upload adds 100+ employees and auto-assigns the documents each job role needs.</li>
+                    <li><strong>Facility Inspection Portal</strong> <span style="color:#64748b;font-style:italic;">(in development)</span>: Laravel &amp; Livewire app replacing paper forms for monthly ER inspections (7 sections, 100+ items); auto-creates issue tickets, uses Google login, and shows each manager only their own locations.</li>
+                    <li><strong>EPowerDoc RPA Automation:</strong> UiPath robot that prepares doctors' daily task lists automatically, removing a slow manual step.</li>
+                    <li>Set up automatic deployment (GitHub Actions → cPanel), Docker environments (MySQL, Redis), and Swagger API docs; added automated tests (Pest/PHPUnit).</li>
                 </ul>
             </div>
 
@@ -187,10 +177,10 @@
                     <div class="job-date">November 2020 – June 2021</div>
                 </div>
                 <ul>
-                    <li><strong>Inventory Management Platform:</strong> Full-stack Livewire solution with real-time order processing</li>
-                    <li><strong>Pharmacy Management System:</strong> Prescription tracking with automated reordering functionality</li>
-                    <li><strong>Employee Management Module:</strong> Attendance tracking, leave management, and performance monitoring</li>
-                    <li>Optimised RESTful APIs and database queries, improving application response time by 40%</li>
+                    <li><strong>Inventory Management Platform:</strong> A full-stack Livewire app that processes orders in real time.</li>
+                    <li><strong>Pharmacy Management System:</strong> Tracks prescriptions and reorders medicine automatically.</li>
+                    <li><strong>Employee Management Module:</strong> Handles attendance, leave, and staff performance.</li>
+                    <li>Improved APIs and database queries, making the app 40% faster.</li>
                 </ul>
             </div>
         </div>
@@ -217,13 +207,6 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>AI Coding Agents</h3>
-                    <div class="skill-items">
-                        <span class="skill-tag">Claude</span><span class="skill-tag">ChatGPT</span>
-                        <span class="skill-tag">DeepSeek</span><span class="skill-tag">GitHub Copilot</span>
-                    </div>
-                </div>
-                <div class="skill-category">
                     <h3>Databases</h3>
                     <div class="skill-items">
                         <span class="skill-tag">MySQL</span><span class="skill-tag">PostgreSQL</span>
@@ -231,31 +214,38 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>DevOps & Tools</h3>
-                    <div class="skill-items">
-                        <span class="skill-tag">Docker</span><span class="skill-tag">CI/CD</span>
-                        <span class="skill-tag">Git</span><span class="skill-tag">Linux</span>
-                        <span class="skill-tag">Tailwind CSS</span><span class="skill-tag">Bootstrap</span><span class="skill-tag">jQuery</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Mobile & Testing</h3>
+                    <h3>Mobile</h3>
                     <div class="skill-items">
                         <span class="skill-tag">React Native</span><span class="skill-tag">Flutter</span>
-                        <span class="skill-tag">PHPUnit</span><span class="skill-tag">Jest</span><span class="skill-tag">PestPHP</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Project Management</h3>
+                    <h3>UI Frameworks</h3>
                     <div class="skill-items">
-                        <span class="skill-tag">Jira</span><span class="skill-tag">Trello</span><span class="skill-tag">Asana</span>
+                        <span class="skill-tag">Tailwind CSS</span><span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">jQuery</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3>Automation & Misc</h3>
                     <div class="skill-items">
-                        <span class="skill-tag">UiPath RPA</span><span class="skill-tag">WordPress</span>
-                        <span class="skill-tag">C/C++</span><span class="skill-tag">Java</span>
+                        <span class="skill-tag">UiPath RPA</span><span class="skill-tag">Java</span>
+                        <span class="skill-tag">WordPress</span><span class="skill-tag">C/C++</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Docker</span><span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Git</span><span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Jira</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>AI Coding Agents</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Claude</span><span class="skill-tag">ChatGPT</span>
+                        <span class="skill-tag">DeepSeek</span><span class="skill-tag">Copilot</span>
                     </div>
                 </div>
             </div>
@@ -263,10 +253,10 @@
 
         <!-- Projects (left) + Education & Competitive Programming (right) -->
         <div class="section">
-            <div class="section-title">Key Projects</div>
+            <div class="section-title">Personal Projects</div>
             <div class="projects-grid">
                 <div class="project-item">
-                    <div class="project-title">Zap Sticker Studio — SaaS Platform</div>
+                    <div class="project-title">Zap Sticker Studio – SaaS Platform</div>
                     <div class="project-tech">Laravel • Livewire • Tailwind CSS</div>
                     <div class="project-desc">Dashboard for managing sticker packs with RESTful API for mobile integration, supporting multi-pack management and streamlining publishing workflows</div>
                 </div>
@@ -288,30 +278,45 @@
             </div>
         </div>
 
-        <div class="page2">
-            <div class="section">
-                <div class="section-title">Education</div>
-                <div class="edu-item">
-                    <div class="edu-degree">BSc in Computer Science & Engineering</div>
-                    <div class="edu-school">Sylhet Engineering College, Shahjalal University of Science & Technology (SUST)</div>
-                    <div class="edu-details">January 2013 – January 2018 &nbsp;•&nbsp; CGPA: 3.36/4.00</div>
-                </div>
-                <div class="edu-item">
-                    <div class="edu-details">
-                        <strong>HSC:</strong> GPA 5.0/5.0 (2012) &nbsp;&nbsp;
-                        <strong>SSC:</strong> GPA 5.0/5.0 (2010)
-                    </div>
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="edu-item">
+                <div class="edu-degree">BSc in Computer Science & Engineering</div>
+                <div class="edu-school">Sylhet Engineering College, Shahjalal University of Science & Technology (SUST)</div>
+                <div class="edu-details">January 2013 – January 2018 &nbsp;•&nbsp; CGPA: 3.36/4.00</div>
+            </div>
+            <div class="edu-item">
+                <div class="edu-school">Jamuna Sar Karkhana School and College</div>
+                <div class="edu-details">
+                    <strong>HSC:</strong> GPA 5.0/5.0 (2012) &nbsp;&nbsp;
+                    <strong>SSC:</strong> GPA 5.0/5.0 (2010)
                 </div>
             </div>
+        </div>
 
-            <div class="section">
-                <div class="section-title">Competitive Programming</div>
-                <div class="edu-details">
-                    <ul style="margin-left:16px;">
-                        <li>UVa Online Judge: <a href="http://uhunt.onlinejudge.org/id/374526" target="_blank" style="color:#1e40af;">Profile</a></li>
-                        <li>Codeforces: <a href="https://codeforces.com/profile/Shahin_SEC" target="_blank" style="color:#1e40af;">Profile</a></li>
-                    </ul>
-                </div>
+        <div class="section">
+            <div class="section-title">Competitive Programming</div>
+            <div class="edu-details">
+                <ul style="margin-left:16px;">
+                    <li>UVa Online Judge: <a href="http://uhunt.onlinejudge.org/id/374526" target="_blank" style="color:#0f766e;">Profile</a></li>
+                    <li>Codeforces: <a href="https://codeforces.com/profile/Shahin_SEC" target="_blank" style="color:#0f766e;">Profile</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Languages</div>
+            <div class="edu-details">
+                <strong>Bangla:</strong> Native &nbsp;•&nbsp;
+                <strong>English:</strong> Professional working proficiency &nbsp;•&nbsp;
+                <strong>Urdu:</strong> Understand (reading/listening)
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Interests</div>
+            <div class="edu-details">
+                Reading &nbsp;•&nbsp; Travelling &nbsp;•&nbsp; Biking
             </div>
         </div>
 

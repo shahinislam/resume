@@ -466,7 +466,7 @@
         <div class="hero-text">
             <div class="hero-eyebrow">Available for opportunities</div>
             <h1>Hi, I'm<br><em>Shahinur Islam</em></h1>
-            <p>Sr. Software Engineer with 5+ years building scalable SaaS platforms, healthcare systems, and enterprise solutions — now supercharged with AI coding agents.</p>
+            <p>Sr. Software Engineer with 5+ years building large web platforms, healthcare systems, and business software — now working faster with AI coding agents.</p>
             <div class="hero-btns">
                 <a href="#contact" class="btn btn-primary">Get In Touch →</a>
                 <a href="#projects" class="btn btn-outline">View Projects</a>
@@ -501,14 +501,18 @@
     <div class="about-grid">
         <div class="about-text">
             <p>I'm a full-stack engineer with 5+ years of experience delivering production-grade web and mobile applications. I specialise in Laravel and Django on the backend, React and Next.js on the frontend, and React Native / Flutter for mobile.</p>
-            <p>I've led rebuilds of large-scale healthcare platforms, designed credentialing systems that cut processing time by 60%, and shipped enterprise tools used by 100+ staff daily.</p>
+            <p>I've led a full healthcare platform rebuild across Laravel, React, and Next.js, built HR and credentialing systems with automated workflows, and shipped tools used by 100+ staff daily.</p>
             <p>I embrace AI coding agents — Claude, ChatGPT, DeepSeek — as a genuine force multiplier, letting me prototype faster, write better code, and ship with more confidence.</p>
+            <div style="margin-top:1.5rem; display:flex; flex-direction:column; gap:0.5rem;">
+                <p style="margin:0;"><strong style="color:var(--text);">Languages:</strong> Bangla (Native) · English (Professional) · Urdu (Understand)</p>
+                <p style="margin:0;"><strong style="color:var(--text);">Interests:</strong> Reading · Travelling · Biking</p>
+            </div>
         </div>
         <div class="stats-grid">
             <div class="stat-card"><h3>5+</h3><p>Years Experience</p></div>
-            <div class="stat-card"><h3>20+</h3><p>Projects Shipped</p></div>
-            <div class="stat-card"><h3>60%</h3><p>Faster Processing</p></div>
-            <div class="stat-card"><h3>100%</h3><p>Client Satisfaction</p></div>
+            <div class="stat-card"><h3>800+</h3><p>Pages Migrated</p></div>
+            <div class="stat-card"><h3>10</h3><p>Languages Supported</p></div>
+            <div class="stat-card"><h3>100+</h3><p>Daily Users</p></div>
         </div>
     </div>
 </div>
@@ -555,7 +559,7 @@
             <h3>DevOps & Tools</h3>
             <div class="skill-tags">
                 <span class="skill-tag">Docker</span><span class="skill-tag">CI/CD</span>
-                <span class="skill-tag">Git</span><span class="skill-tag">Linux</span>
+                <span class="skill-tag">Git</span><span class="skill-tag">Linux</span><span class="skill-tag">Swagger</span>
             </div>
         </div>
         <div class="skill-card">
@@ -587,17 +591,19 @@
         <div class="timeline-card">
             <div class="tl-header">
                 <div>
-                    <div class="tl-role">Software Engineer</div>
+                    <div class="tl-role">Sr. Software Engineer</div>
                     <div class="tl-company">Byte Trek Limited</div>
                 </div>
                 <span class="tl-date">July 2021 — Present</span>
             </div>
             <ul class="tl-list">
-                <li><div><strong>SignatureCare Healthcare Platform:</strong> Rebuilt from WordPress to Laravel, React.js, and Next.js — migrated 800+ pages with a dynamic content dashboard</div></li>
-                <li><div><strong>Healthcare Credentialing System:</strong> Django-based verification system that cut processing time by 60%</div></li>
-                <li><div><strong>Enterprise Employee Management System:</strong> Role-based system for 100+ users with ZKTeco attendance integration</div></li>
-                <li><div><strong>Patient Survey Web Application:</strong> Laravel app with barcode reader and automated PDF/Excel report distribution</div></li>
-                <li><div><strong>EPowerDoc RPA Automation:</strong> UiPath solution eliminating manual workflow processes for doctors</div></li>
+                <li><div><strong>SignatureCare Healthcare Platform:</strong> Rebuilt from WordPress to Laravel (API), React.js (admin), and Next.js (public site) — migrated 800+ pages, added 10-language support with English fallback, and built a React.js dashboard for non-technical content editing</div></li>
+                <li><div><strong>Employee Management System:</strong> Laravel &amp; Livewire HR app with role-based access (admin / team lead / employee), ZKTeco fingerprint attendance, and automated payroll, leave, and shift scheduling</div></li>
+                <li><div><strong>Patient Survey Web Application:</strong> Tablet-based Livewire survey — low ratings trigger staff email alerts, high ratings show a QR code for public reviews; automated PDF/Excel reports with email/SMS logging</div></li>
+                <li><div><strong>Healthcare Credentialing System:</strong> Django app tracking staff document expiry with a live compliance dashboard; one Excel upload onboards 100+ employees and auto-assigns per-role documents</div></li>
+                <li><div><strong>Facility Inspection Portal</strong> <em>(in development)</em>: Laravel &amp; Livewire app replacing paper forms for monthly ER inspections — auto-creates issue tickets, Google login, location-scoped roles</div></li>
+                <li><div><strong>EPowerDoc RPA Automation:</strong> UiPath robot that prepares doctors' daily task lists automatically, removing a slow manual step</div></li>
+                <li><div><strong>DevOps:</strong> CI/CD pipelines (GitHub Actions → cPanel), Docker environments (MySQL, Redis), Swagger API docs, and automated tests (Pest/PHPUnit)</div></li>
             </ul>
         </div>
         <div class="timeline-card">
@@ -629,37 +635,55 @@
             <div class="project-num">01</div>
             <h3>SignatureCare Healthcare Platform</h3>
             <div class="project-tech">Laravel · React.js · Next.js</div>
-            <p>Complete platform rebuild with 800+ pages migrated, a dynamic React.js dashboard, and enhanced content management for a large-scale US healthcare service.</p>
+            <p>Full rebuild from WordPress — 800+ pages migrated, 10-language support with English fallback, and a React.js dashboard that lets non-technical staff manage content on their own.</p>
         </div>
         <div class="project-card">
             <div class="project-num">02</div>
-            <h3>Zap Sticker Studio — SaaS</h3>
-            <div class="project-tech">Laravel · Livewire · Tailwind CSS</div>
-            <p>Dashboard for uploading and managing sticker packs with RESTful API for mobile integration, streamlining the entire sticker publishing workflow.</p>
+            <h3>Employee Management System</h3>
+            <div class="project-tech">Laravel · Livewire · ZKTeco</div>
+            <p>HR platform with role-based access (admin / team lead / employee), ZKTeco fingerprint attendance, and automated payroll, leave, and shift scheduling.</p>
         </div>
         <div class="project-card">
             <div class="project-num">03</div>
+            <h3>Patient Survey Application</h3>
+            <div class="project-tech">Laravel · Livewire · QR / PDF / Excel</div>
+            <p>Tablet-based survey where low ratings send instant staff alerts and high ratings show a QR code for public reviews; builds PDF/Excel reports and logs every email and SMS.</p>
+        </div>
+        <div class="project-card">
+            <div class="project-num">04</div>
+            <h3>Healthcare Credentialing System</h3>
+            <div class="project-tech">Django · Python · pandas</div>
+            <p>Tracks staff document expiry with a live compliance dashboard; a single Excel upload onboards 100+ employees and auto-assigns the documents each job role requires.</p>
+        </div>
+        <div class="project-card">
+            <div class="project-num">05</div>
+            <h3>Facility Inspection Portal <span style="color:var(--green);font-size:0.75rem;">• in dev</span></h3>
+            <div class="project-tech">Laravel · Livewire · Google OAuth</div>
+            <p>Replaces paper forms for monthly ER inspections (7 sections, 100+ items); auto-creates issue tickets and shows each manager only their own assigned locations.</p>
+        </div>
+        <div class="project-card">
+            <div class="project-num">06</div>
+            <h3>Zap Sticker Studio — SaaS</h3>
+            <div class="project-tech">Laravel · Livewire · Tailwind CSS</div>
+            <p>Dashboard for uploading and managing sticker packs with a RESTful API for mobile integration, streamlining the entire sticker publishing workflow.</p>
+        </div>
+        <div class="project-card">
+            <div class="project-num">07</div>
             <h3>Electronic Medical Records (EMR)</h3>
             <div class="project-tech">Laravel · Bootstrap · MySQL</div>
             <p>Appointment scheduling, medical history tracking, and document management; significantly reduced paperwork overhead across the clinic.</p>
         </div>
         <div class="project-card">
-            <div class="project-num">04</div>
+            <div class="project-num">08</div>
             <h3>Inventory Management System</h3>
             <div class="project-tech">Laravel · Livewire · Bootstrap</div>
             <p>Real-time stock tracking and automated report generation; eliminated manual reconciliation and cut stock-check time significantly.</p>
         </div>
         <div class="project-card">
-            <div class="project-num">05</div>
+            <div class="project-num">09</div>
             <h3>House Rent Management</h3>
             <div class="project-tech">Laravel · Livewire · jQuery</div>
             <p>Tenant tracking, payment processing, and automated rent reminders — reduced administrative workload for property managers end to end.</p>
-        </div>
-        <div class="project-card">
-            <div class="project-num">06</div>
-            <h3>Django Credentialing System</h3>
-            <div class="project-tech">Django · Python · PostgreSQL</div>
-            <p>Healthcare provider verification that reduced processing time by 60% through automation and streamlined multi-step verification workflows.</p>
         </div>
     </div>
 </div>
@@ -683,7 +707,7 @@
                 <div class="ci-icon">📱</div>
                 <div>
                     <div class="ci-label">Phone</div>
-                    <div class="ci-value">01303653800</div>
+                    <div class="ci-value">+880 1303653800</div>
                 </div>
             </div>
             <div class="contact-item">
